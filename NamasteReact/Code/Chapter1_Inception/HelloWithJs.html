@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World With JS</title>
+</head>
+<body>
+    <div id="root"></div>
+    
+</body>
+<script>
+    //  Create a new Element "HEading"
+    const heading = document.createElement("h1");
+    // Add text to the Heading
+    heading.innerHTML = "Hello World! Using Javascript";
+    // Get tje root Element
+    const root = document.getElementById("root");
+    // Append the heading to the root Element
+    root.appendChild(heading);
+</script>
+</html>
