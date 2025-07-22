@@ -1,0 +1,23 @@
+{
+  "name": "chapter2_igniteapp",
+  "version": "1.0.0",
+  "description": "This is Namaste React Series",
+ 
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anjali-93"
+  },
+  "keywords": [],
+  "author": "Anjali Saxena",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}

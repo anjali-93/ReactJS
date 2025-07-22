@@ -1,0 +1,11 @@
+{
+  "name": "chapter3_layingfoundation",
+  "version": "1.0.0",
+  "description": "\"this is namaste react\"",
+  "main": "App.js",
+  "scripts": {
+    "test": "just"
+  },
+  "author": "",
+  "license": "ISC"
+}
