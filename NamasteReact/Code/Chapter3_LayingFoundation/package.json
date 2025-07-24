@@ -2,10 +2,16 @@
   "name": "chapter3_layingfoundation",
   "version": "1.0.0",
   "description": "\"this is namaste react\"",
-  "main": "App.js",
   "scripts": {
     "test": "just"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
 }

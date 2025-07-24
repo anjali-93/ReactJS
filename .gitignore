@@ -1,0 +1,4 @@
+# 🚫 .gitignore
+# Ignore all node_modules folders in the project
+node_modules/
+**/node_modules/
