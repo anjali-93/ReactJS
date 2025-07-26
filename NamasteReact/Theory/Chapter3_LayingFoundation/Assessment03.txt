@@ -1,0 +1,31 @@
+Q1. What is JSX?
+Ans. JSX is HTML-like or XML-like syntax. JSX stands for JavaScript
+     XML. It's a syntax extension for JavaScript.
+
+Q2. Role of type attribute in script tag? What options can I use there?
+Ans. The type attribute informs the browser about the content type of the 
+     script. This helps the browser correctly interpret and execute the code.
+	 
+	 you can use in type attribute - module and it contain by default - text/javascript.
+
+Q3. Difference Between {TitleComponent} vs {<TitleComponent/>} and {<TitleComponent></TitleComponent>} in JSX ?
+Ans. {TitleComponent} - it can access the React ELEMENT  in React Component.
+     
+     {<TitleComponent/>} - we can use for accessing the React Component.
+	 
+	 {<TitleComponent></TitleComponent>} - its same as for accessing the component in react.
+	 
+	 FOR EXAMPLE -
+	 
+	 const elem = <h1>This is  an Element Tag</h1>;
+	 
+	 const HeadingComponent = () => (
+	   <>
+	   {elem} // we access the react element.
+	   <h1>This is Functional Component
+	   </>
+	 );
+	 
+	 const root = ReactDOM.createRoot(document.getElementById("root"));
+    
+     root.render(<HeadingComponent />); // this render the heading functional COmponent
