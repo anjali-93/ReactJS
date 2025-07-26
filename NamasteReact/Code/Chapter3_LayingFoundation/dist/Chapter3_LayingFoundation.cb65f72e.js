@@ -160,11 +160,11 @@
       });
     }
   }
-})({"dnp57":[function(require,module,exports,__globalThis) {
+})({"icAAj":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 50658;
+var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -680,18 +680,67 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-const heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-    children: "Namaste React from JSX"
+//   React Element
+// Element in inside the Element 
+const elem = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+    children: "Hello World from React"
 }, void 0, false, {
     fileName: "App.js",
-    lineNumber: 5,
-    columnNumber: 18
+    lineNumber: 6,
+    columnNumber: 14
 }, undefined);
-console.log(heading); //  React Element is an Object
+const heading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+    children: [
+        elem,
+        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            children: "Namaste React "
+        }, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 10,
+            columnNumber: 2
+        }, undefined)
+    ]
+}, void 0, true);
+//  React Functional Component
+const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+        children: "Hyy!! This is Title From Another Component"
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 17,
+        columnNumber: 4
+    }, undefined);
+_c = Title;
+//  Component Composition
+const HeadingComponent = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 24,
+                columnNumber: 5
+            }, undefined),
+            heading,
+            " ",
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Namaste React from Functional Component"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 26,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true);
+_c1 = HeadingComponent;
 //  Get the root Element
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
-//  Render the heading to the root Element
-root.render(heading); //rendering React Element to the DOM
+//  Render the Functional Component to the root Element
+root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingComponent, {}, void 0, false, {
+    fileName: "App.js",
+    lineNumber: 35,
+    columnNumber: 18
+}, undefined));
+var _c, _c1;
+$RefreshReg$(_c, "Title");
+$RefreshReg$(_c1, "HeadingComponent");
 
   $parcel$ReactRefreshHelpers$4931.postlude(module);
 } finally {
@@ -18405,6 +18454,6 @@ module.exports = require("ee51401569654d91");
     };
 })();
 
-},{"58362d9d82be395f":"jMk1U"}]},["dnp57","blcJa"], "blcJa", "parcelRequirec68d", {}, null, null, "http://localhost:50658")
+},{"58362d9d82be395f":"jMk1U"}]},["icAAj","blcJa"], "blcJa", "parcelRequirec68d", {}, null, null, "http://localhost:1234")
 
 //# sourceMappingURL=Chapter3_LayingFoundation.cb65f72e.js.map
