@@ -1,0 +1,25 @@
+{
+  "name": "chapter4-_restaurantapp",
+  "version": "1.0.0",
+  "description": "Restaurant Landing App",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anjali-93"
+  },
+  "keywords": [
+    "Restaurant",
+    "App"
+  ],
+  "author": "Anjali",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}

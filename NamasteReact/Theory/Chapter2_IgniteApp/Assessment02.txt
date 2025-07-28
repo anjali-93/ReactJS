@@ -1,13 +1,17 @@
  THEORY ASSIGNMENT :
  
  Q1. What is NPM?
- Ans. 
+ Ans. NPM is a node packager which manages the package of node modules .
+      but it doesn't stand for node packager modules.
  
 Q2. What is `Parcel/Webpack`? Why do we need it?
-Ans.
+Ans. Parcel/Webpack` is a bundler which bundle all the code , app that it 
+     can shipped to production
 
 Q3. What is `.parcel-cache`?
-Ans. 
+Ans. Parcel immediately loads the code from the cache every time
+     there is a subsequent build.Parcel gives faster build, faster developer experience
+     because of caching.
 
 Q4. What is `npx` ?
 Ans.
@@ -19,23 +23,34 @@ Q6. What is Tree Shaking?
 Ans.
 
 Q7. What is Hot Module Replacement?
-Ans.
+Ans. It means that parcel will keep a track of all the files which you are updating.
+     There is File Watcher Algorithm (written in C++). It keeps track of all the
+	 files which are changing realtime and it tells the server to reload.
+
 
 Q8. List down your favourite 5 superpowers of Parcel and describe any 3 of them in your
     own words.
 Ans.
 
 Q9. What is `.gitignore`? What should we add and not add into it?
-Ans.
+Ans. gitignore files contain those files which we shouldn't put on the git.bcoz it re-genreates
+     all the files .so there is no need to push on git.
 
 Q10. What is the difference between `package.json` and `package-lock.json`?
-Ans.
+Ans. Package.json file is a configuration for NPM. their versions and
+     configuration related information is stored as dependencies inside package.json file.
+	 
+	 PACKAGE-LOCK.JSON - it contain the exact version of the packages being used in our project.
+
 
 Q11. Why should I not modify `package-lock.json`?
 Ans.
 
 Q12. What is `node_modules` ? Is it a good idea to push that on git?
-Ans.
+Ans. node_modules is like a database bocz it contain all the data(package)
+      what we need for our project. 
+	  No, its not a good idea to push that on git bcoz , we can regenrate the node modules
+	  if we know the package.json and package-lock.json files.
 
 Q13. What is the `dist` folder?
 Ans.
