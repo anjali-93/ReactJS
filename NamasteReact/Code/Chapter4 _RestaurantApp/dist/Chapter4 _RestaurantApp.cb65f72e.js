@@ -753,7 +753,8 @@ const Header = ()=>{
 _c = Header;
 const RestaurantCard = (props)=>{
     //you can put the {resName, cuisines, rating} in the function parameter itself
-    const { resName, cuisines, rating } = props;
+    const { resData } = props;
+    const { cloudinaryImageId, name, avgRating, cuisines } = resData?.info; //destructuring the info object from resData
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "res-card",
         style: {
@@ -761,49 +762,824 @@ const RestaurantCard = (props)=>{
         },
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: "https://wallpapers.com/images/hd/delicious-chicken-biryani-lvt0vzn0ru95pezx.jpg",
+                src: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" + cloudinaryImageId,
                 alt: "restaurant",
                 className: "res-logo"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 30,
+                lineNumber: 34,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: props.resName
+                children: name
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 31,
+                lineNumber: 35,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: [
                     "Rating :",
-                    props.rating
+                    avgRating
                 ]
             }, void 0, true, {
                 fileName: "App.js",
-                lineNumber: 32,
+                lineNumber: 36,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: [
                     "Cuisines: ",
-                    props.cuisines
+                    cuisines.join(",")
                 ]
             }, void 0, true, {
                 fileName: "App.js",
-                lineNumber: 33,
+                lineNumber: 37,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 29,
+        lineNumber: 33,
         columnNumber: 9
     }, undefined);
 };
 _c1 = RestaurantCard;
+const resObj = {
+    "restaurants": [
+        {
+            "info": {
+                "id": "151649",
+                "name": "Sai Restaurant",
+                "cloudinaryImageId": "vkhcohhmqfczycw9vsar",
+                "locality": "railway station",
+                "areaName": "Chhindwara Locality",
+                "costForTwo": "\u20B9200 for two",
+                "cuisines": [
+                    "North Indian",
+                    "South Indian",
+                    "Chinese"
+                ],
+                "avgRating": 4.3,
+                "veg": true,
+                "parentId": "101802",
+                "avgRatingString": "4.3",
+                "totalRatingsString": "1.0K+",
+                "sla": {
+                    "deliveryTime": 37,
+                    "lastMileTravel": 11.3,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "35-40 mins",
+                    "lastMileTravelString": "11.3 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2025-07-29 22:30:00",
+                    "opened": true
+                },
+                "badges": {
+                    "imageBadges": [
+                        {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                        }
+                    ]
+                },
+                "isOpen": true,
+                "aggregatedDiscountInfoV2": {},
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {
+                            "badgeObject": [
+                                {
+                                    "attributes": {
+                                        "description": "pureveg",
+                                        "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                    }
+                                }
+                            ]
+                        },
+                        "textBased": {},
+                        "textExtendedBadges": {}
+                    }
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "--"
+                    }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {
+                "context": "seo-data-5a40778b-ae9a-4fa5-a0b2-4b2090f3ca47"
+            },
+            "cta": {
+                "link": "https://www.swiggy.com/city/chhindwara/hotel-sai-nath-and-sai-restaurant-railway-station-chhindwara-locality-rest151649",
+                "type": "WEBLINK"
+            }
+        },
+        {
+            "info": {
+                "id": "150591",
+                "name": "Satkar Restaurant",
+                "cloudinaryImageId": "rvxp5xbniat84r6efku2",
+                "locality": "Sinchai Colony",
+                "areaName": "Satkar Chowk",
+                "costForTwo": "\u20B9250 for two",
+                "cuisines": [
+                    "South Indian",
+                    "Indian",
+                    "Salads",
+                    "Desserts"
+                ],
+                "avgRating": 4.4,
+                "veg": true,
+                "parentId": "21553",
+                "avgRatingString": "4.4",
+                "totalRatingsString": "3.0K+",
+                "sla": {
+                    "deliveryTime": 32,
+                    "lastMileTravel": 13.4,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "30-35 mins",
+                    "lastMileTravelString": "13.4 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2025-07-29 22:45:00",
+                    "opened": true
+                },
+                "badges": {
+                    "imageBadges": [
+                        {
+                            "imageId": "Rxawards/_CATEGORY-North%20Indian.png",
+                            "description": "Delivery!"
+                        },
+                        {
+                            "imageId": "Ratnesh_Badges/Rx_Awards_2025/_Milestone%20Restaurants.png",
+                            "description": "Delivery!"
+                        }
+                    ]
+                },
+                "isOpen": true,
+                "aggregatedDiscountInfoV2": {},
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {
+                            "badgeObject": [
+                                {
+                                    "attributes": {
+                                        "description": "Delivery!",
+                                        "imageId": "Rxawards/_CATEGORY-North%20Indian.png"
+                                    }
+                                },
+                                {
+                                    "attributes": {
+                                        "description": "Delivery!",
+                                        "imageId": "Ratnesh_Badges/Rx_Awards_2025/_Milestone%20Restaurants.png"
+                                    }
+                                }
+                            ]
+                        },
+                        "textBased": {},
+                        "textExtendedBadges": {}
+                    }
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "--"
+                    }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {
+                "context": "seo-data-5a40778b-ae9a-4fa5-a0b2-4b2090f3ca47"
+            },
+            "cta": {
+                "link": "https://www.swiggy.com/city/chhindwara/satkar-restaurant-sinchai-colony-satkar-chowk-rest150591",
+                "type": "WEBLINK"
+            }
+        },
+        {
+            "info": {
+                "id": "151518",
+                "name": "Bakery World",
+                "cloudinaryImageId": "mt2aggiscfl3yviatwng",
+                "locality": "Parasia Road",
+                "areaName": "Parasia Road",
+                "costForTwo": "\u20B9250 for two",
+                "cuisines": [
+                    "Bakery",
+                    "Ice Cream",
+                    "Snacks",
+                    "Beverages"
+                ],
+                "avgRating": 4.3,
+                "veg": true,
+                "parentId": "40363",
+                "avgRatingString": "4.3",
+                "totalRatingsString": "283",
+                "sla": {
+                    "deliveryTime": 37,
+                    "lastMileTravel": 14.1,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "35-40 mins",
+                    "lastMileTravelString": "14.1 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2025-07-29 22:30:00",
+                    "opened": true
+                },
+                "badges": {
+                    "imageBadges": [
+                        {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                        }
+                    ]
+                },
+                "isOpen": true,
+                "aggregatedDiscountInfoV2": {},
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {
+                            "badgeObject": [
+                                {
+                                    "attributes": {
+                                        "description": "pureveg",
+                                        "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                    }
+                                }
+                            ]
+                        },
+                        "textBased": {},
+                        "textExtendedBadges": {}
+                    }
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "--"
+                    }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {
+                "context": "seo-data-5a40778b-ae9a-4fa5-a0b2-4b2090f3ca47"
+            },
+            "cta": {
+                "link": "https://www.swiggy.com/city/chhindwara/bakery-world-parasia-road-rest151518",
+                "type": "WEBLINK"
+            }
+        },
+        {
+            "info": {
+                "id": "234875",
+                "name": "Adil Hotel",
+                "cloudinaryImageId": "gp1ityra6utvzqn6ghnv",
+                "locality": "Rautha Wada",
+                "areaName": "Chhindwara Locality",
+                "costForTwo": "\u20B9150 for two",
+                "cuisines": [
+                    "Biryani",
+                    "Tandoor"
+                ],
+                "avgRating": 4.4,
+                "parentId": "27123",
+                "avgRatingString": "4.4",
+                "totalRatingsString": "1.3K+",
+                "sla": {
+                    "deliveryTime": 28,
+                    "lastMileTravel": 11.5,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "25-30 mins",
+                    "lastMileTravelString": "11.5 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2025-07-30 00:00:00",
+                    "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "aggregatedDiscountInfoV2": {},
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {},
+                        "textBased": {},
+                        "textExtendedBadges": {}
+                    }
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "--"
+                    }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {
+                "context": "seo-data-5a40778b-ae9a-4fa5-a0b2-4b2090f3ca47"
+            },
+            "cta": {
+                "link": "https://www.swiggy.com/city/chhindwara/adil-hotel-rautha-wada-chhindwara-locality-rest234875",
+                "type": "WEBLINK"
+            }
+        },
+        {
+            "info": {
+                "id": "151656",
+                "name": "Dev International",
+                "cloudinaryImageId": "enj3srsnhbltbom2ovvh",
+                "locality": "khajri road",
+                "areaName": "Mohan Nagar",
+                "costForTwo": "\u20B9100 for two",
+                "cuisines": [
+                    "Chinese",
+                    "Fast Food",
+                    "Beverages"
+                ],
+                "avgRating": 4.3,
+                "parentId": "71556",
+                "avgRatingString": "4.3",
+                "totalRatingsString": "549",
+                "sla": {
+                    "deliveryTime": 50,
+                    "lastMileTravel": 13.6,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "45-55 mins",
+                    "lastMileTravelString": "13.6 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2025-07-29 22:30:00",
+                    "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {},
+                        "textBased": {},
+                        "textExtendedBadges": {}
+                    }
+                },
+                "aggregatedDiscountInfoV3": {
+                    "header": "\u20B9100 OFF",
+                    "subHeader": "ABOVE \u20B9299",
+                    "discountTag": "FLAT DEAL"
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "--"
+                    }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {
+                "context": "seo-data-5a40778b-ae9a-4fa5-a0b2-4b2090f3ca47"
+            },
+            "cta": {
+                "link": "https://www.swiggy.com/city/chhindwara/dev-international-khajri-road-mohan-nagar-rest151656",
+                "type": "WEBLINK"
+            }
+        },
+        {
+            "info": {
+                "id": "151515",
+                "name": "Gupta Bhojnalay",
+                "cloudinaryImageId": "jo9pdipf4elcuch8g55q",
+                "locality": "fulwara chowk",
+                "areaName": "Chhindwara Locality",
+                "costForTwo": "\u20B9200 for two",
+                "cuisines": [
+                    "Fast Food",
+                    "Indian",
+                    "Beverages"
+                ],
+                "avgRating": 4.8,
+                "veg": true,
+                "parentId": "91635",
+                "avgRatingString": "4.8",
+                "totalRatingsString": "450",
+                "sla": {
+                    "deliveryTime": 36,
+                    "lastMileTravel": 11.8,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "35-40 mins",
+                    "lastMileTravelString": "11.8 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2025-07-29 23:00:00",
+                    "opened": true
+                },
+                "badges": {
+                    "imageBadges": [
+                        {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                        }
+                    ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {
+                            "badgeObject": [
+                                {
+                                    "attributes": {
+                                        "description": "pureveg",
+                                        "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                    }
+                                }
+                            ]
+                        },
+                        "textBased": {},
+                        "textExtendedBadges": {}
+                    }
+                },
+                "aggregatedDiscountInfoV3": {
+                    "header": "\u20B9100 OFF",
+                    "subHeader": "ABOVE \u20B9999",
+                    "discountTag": "FLAT DEAL"
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "--"
+                    }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {
+                "context": "seo-data-5a40778b-ae9a-4fa5-a0b2-4b2090f3ca47"
+            },
+            "cta": {
+                "link": "https://www.swiggy.com/city/chhindwara/gupta-bhojnalay-fulwara-chowk-chhindwara-locality-rest151515",
+                "type": "WEBLINK"
+            }
+        },
+        {
+            "info": {
+                "id": "625927",
+                "name": "Kathi Junction",
+                "cloudinaryImageId": "nigqvxgzvyxtfjuqasgg",
+                "locality": "Bunglow Madhuvan Colony",
+                "areaName": "Prasia Road",
+                "costForTwo": "\u20B9200 for two",
+                "cuisines": [
+                    "rolls",
+                    "Burgers",
+                    "Pizzas",
+                    "Fast Food"
+                ],
+                "avgRating": 4.2,
+                "parentId": "1935",
+                "avgRatingString": "4.2",
+                "totalRatingsString": "378",
+                "sla": {
+                    "deliveryTime": 40,
+                    "lastMileTravel": 12.2,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "40-50 mins",
+                    "lastMileTravelString": "12.2 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2025-07-29 23:00:00",
+                    "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {},
+                        "textBased": {},
+                        "textExtendedBadges": {}
+                    }
+                },
+                "aggregatedDiscountInfoV3": {
+                    "header": "\u20B9100 OFF",
+                    "subHeader": "ABOVE \u20B9399",
+                    "discountTag": "FLAT DEAL"
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "--"
+                    }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {
+                "context": "seo-data-5a40778b-ae9a-4fa5-a0b2-4b2090f3ca47"
+            },
+            "cta": {
+                "link": "https://www.swiggy.com/city/chhindwara/kathi-junction-bunglow-madhuvan-colony-prasia-road-rest625927",
+                "type": "WEBLINK"
+            }
+        },
+        {
+            "info": {
+                "id": "522144",
+                "name": "Blue Chilli Restaurant",
+                "cloudinaryImageId": "je6qlse8csxgcfpuoybe",
+                "locality": "Ambedkar Nagar",
+                "areaName": "Prasia Road",
+                "costForTwo": "\u20B9150 for two",
+                "cuisines": [
+                    "South Indian",
+                    "Indian",
+                    "Fast Food"
+                ],
+                "avgRating": 4.1,
+                "veg": true,
+                "parentId": "311804",
+                "avgRatingString": "4.1",
+                "totalRatingsString": "226",
+                "sla": {
+                    "deliveryTime": 36,
+                    "lastMileTravel": 10.9,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "35-40 mins",
+                    "lastMileTravelString": "10.9 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2025-07-29 23:00:00",
+                    "opened": true
+                },
+                "badges": {
+                    "imageBadges": [
+                        {
+                            "imageId": "v1695133679/badges/Pure_Veg111.png",
+                            "description": "pureveg"
+                        }
+                    ]
+                },
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {
+                            "badgeObject": [
+                                {
+                                    "attributes": {
+                                        "description": "pureveg",
+                                        "imageId": "v1695133679/badges/Pure_Veg111.png"
+                                    }
+                                }
+                            ]
+                        },
+                        "textBased": {},
+                        "textExtendedBadges": {}
+                    }
+                },
+                "aggregatedDiscountInfoV3": {
+                    "header": "20% OFF",
+                    "subHeader": "UPTO \u20B9120"
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "--"
+                    }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {
+                "context": "seo-data-5a40778b-ae9a-4fa5-a0b2-4b2090f3ca47"
+            },
+            "cta": {
+                "link": "https://www.swiggy.com/city/chhindwara/blue-chilli-restaurant-ambedkar-nagar-prasia-road-rest522144",
+                "type": "WEBLINK"
+            }
+        },
+        {
+            "info": {
+                "id": "658210",
+                "name": "The Fusion Lounge",
+                "cloudinaryImageId": "fa4944f0cfdcbca2bec1f3ab8e3db3f7",
+                "locality": "Triloki nagar",
+                "areaName": "Railway Station",
+                "costForTwo": "\u20B9300 for two",
+                "cuisines": [
+                    "South Indian",
+                    "Chinese",
+                    "Beverages",
+                    "Fast Food",
+                    "Desserts"
+                ],
+                "avgRating": 4.1,
+                "parentId": "395453",
+                "avgRatingString": "4.1",
+                "totalRatingsString": "355",
+                "sla": {
+                    "deliveryTime": 48,
+                    "lastMileTravel": 11.9,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "45-55 mins",
+                    "lastMileTravelString": "11.9 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2025-07-29 23:00:00",
+                    "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "aggregatedDiscountInfoV2": {},
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {},
+                        "textBased": {},
+                        "textExtendedBadges": {}
+                    }
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "--"
+                    }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {
+                "context": "seo-data-5a40778b-ae9a-4fa5-a0b2-4b2090f3ca47"
+            },
+            "cta": {
+                "link": "https://www.swiggy.com/city/chhindwara/the-fusion-lounge-triloki-nagar-railway-station-rest658210",
+                "type": "WEBLINK"
+            }
+        },
+        {
+            "info": {
+                "id": "184424",
+                "name": "Sab Ghar Tak Foods",
+                "cloudinaryImageId": "ryzswg44bt7thqzkuaj4",
+                "locality": "Sanchar Colony",
+                "areaName": "Parsia Road",
+                "costForTwo": "\u20B9200 for two",
+                "cuisines": [
+                    "North Indian",
+                    "South Indian",
+                    "Chinese",
+                    "Beverages",
+                    "Fast Food",
+                    "Desserts"
+                ],
+                "avgRating": 4.1,
+                "parentId": "173932",
+                "avgRatingString": "4.1",
+                "totalRatingsString": "617",
+                "sla": {
+                    "deliveryTime": 50,
+                    "lastMileTravel": 14.1,
+                    "serviceability": "SERVICEABLE",
+                    "slaString": "50-60 mins",
+                    "lastMileTravelString": "14.1 km",
+                    "iconType": "ICON_TYPE_EMPTY"
+                },
+                "availability": {
+                    "nextCloseTime": "2025-07-29 23:00:00",
+                    "opened": true
+                },
+                "badges": {},
+                "isOpen": true,
+                "type": "F",
+                "badgesV2": {
+                    "entityBadges": {
+                        "imageBased": {},
+                        "textBased": {},
+                        "textExtendedBadges": {}
+                    }
+                },
+                "aggregatedDiscountInfoV3": {
+                    "header": "\u20B950 OFF",
+                    "subHeader": "ABOVE \u20B9199",
+                    "discountTag": "FLAT DEAL"
+                },
+                "differentiatedUi": {
+                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    "differentiatedUiMediaDetails": {
+                        "lottie": {},
+                        "video": {}
+                    }
+                },
+                "reviewsSummary": {},
+                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                "restaurantOfferPresentationInfo": {},
+                "externalRatings": {
+                    "aggregatedRating": {
+                        "rating": "--"
+                    }
+                },
+                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+            },
+            "analytics": {
+                "context": "seo-data-5a40778b-ae9a-4fa5-a0b2-4b2090f3ca47"
+            },
+            "cta": {
+                "link": "https://www.swiggy.com/city/chhindwara/sab-ghar-tak-foods-sanchar-colony-parsia-road-rest184424",
+                "type": "WEBLINK"
+            }
+        }
+    ]
+};
 const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
@@ -813,40 +1589,29 @@ const Body = ()=>{
                 children: "search"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 42,
+                lineNumber: 973,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "res-containner",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                        resName: "Meghana Foods",
-                        cuisines: "Biryani ,Indian",
-                        rating: "4.4"
-                    }, void 0, false, {
+                children: resObj.restaurants.map((restaurant)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
+                        resData: restaurant
+                    }, restaurant.info.id, false, {
                         fileName: "App.js",
-                        lineNumber: 44,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCard, {
-                        resName: "KFC",
-                        cuisines: "Burger , Fries",
-                        rating: "4.5"
-                    }, void 0, false, {
-                        fileName: "App.js",
-                        lineNumber: 45,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                        lineNumber: 978,
+                        columnNumber: 28
+                    }, undefined);
+                })
+            }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 43,
+                lineNumber: 974,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 41,
+        lineNumber: 972,
         columnNumber: 9
     }, undefined);
 };
@@ -857,18 +1622,18 @@ const AppLayout = ()=>{
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 54,
+                lineNumber: 989,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 55,
+                lineNumber: 990,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 53,
+        lineNumber: 988,
         columnNumber: 9
     }, undefined);
 };
@@ -876,7 +1641,7 @@ _c3 = AppLayout;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 62,
+    lineNumber: 997,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;
