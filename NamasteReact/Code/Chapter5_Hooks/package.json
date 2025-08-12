@@ -1,0 +1,26 @@
+{
+  "name": "chapter5_hooks",
+  "version": "1.0.0",
+  "description": "learning hoooks",
+ 
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anjali-93"
+  },
+  "keywords": [
+    "hooks",
+    "react"
+  ],
+  "author": "Anjali Saxena",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}

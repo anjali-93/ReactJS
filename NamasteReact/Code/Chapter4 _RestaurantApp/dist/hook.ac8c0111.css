@@ -1,0 +1,50 @@
+.header {
+  border: 1px solid #000;
+  justify-content: space-between;
+  display: flex;
+}
+
+.logo {
+  width: 200px;
+}
+
+.nav-items {
+  padding: 0 20px;
+}
+
+.nav-items > ul {
+  font-size: 24px;
+  list-style: none;
+  display: flex;
+}
+
+.nav-items > ul > li {
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+}
+
+.res-card {
+  width: 200px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.res-card:hover {
+  cursor: pointer;
+  border: 1px solid #000;
+}
+
+.res-containner {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.search {
+  padding: 10px;
+}
+
+.res-logo {
+  width: 100%;
+}
+/*# sourceMappingURL=hook.ac8c0111.css.map */
