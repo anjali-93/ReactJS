@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #f0f0f0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.profile-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px;
+  padding: 16px;
+  box-shadow: 0 2px 4px #0000001a;
+}
+
+.profile-card h1 {
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.profile-card p {
+  color: #555;
+  font-size: 16px;
+}
+
+.profile-card img {
+  border-radius: 50%;
+  width: 100%;
+  height: 350px;
+}
+
+.profile-card .profile-image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 16px;
+}
+
+.profile-card .profile-info {
+  text-align: center;
+}
+/*# sourceMappingURL=Chapter4 _RestaurantApp.aa436662.css.map */

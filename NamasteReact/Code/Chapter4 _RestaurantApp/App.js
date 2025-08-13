@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import ProfileCard from "./ProfileCard";
 
 
 
@@ -986,8 +987,9 @@ const Body = () => {
 const AppLayout = () =>{
     return (
         <div className="app">
-            <Header/>
-            <Body/>
+            {/* <Header/>
+            <Body/> */}
+            <ProfileCard/>
 
         </div>
     )
