@@ -934,7 +934,7 @@
                         "Chinese",
                         "Snacks",
                       ],
-                      "avgRating": 4,
+                      "avgRating": 4.7,
                       "veg": true,
                       "parentId": "9378",
                       "avgRatingString": "4.0",
@@ -1050,7 +1050,7 @@
                         "Italian",
                         "Snacks"
                       ],
-                      "avgRating": 4.3,
+                      "avgRating": 4.6,
                       "veg": true,
                       "parentId": "45936",
                       "avgRatingString": "4.3",

@@ -1,6 +1,9 @@
 # 🚫 .gitignore
 # Ignore Parcel cache file
+.# Parcel cache directories
+.parcel-cache/
 .parcel-cache/data.mdb
+
 # Ignore all node_modules folders in the project
 node_modules/
 **/node_modules/                                                                                                          
