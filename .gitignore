@@ -4,6 +4,9 @@
 .parcel-cache/
 .parcel-cache/data.mdb
 
+# Ignore all Parcel cache folders
+**/.parcel-cache/
+
 # Ignore all node_modules folders in the project
 node_modules/
 **/node_modules/                                                                                                          
