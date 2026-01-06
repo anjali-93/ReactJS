@@ -18,11 +18,13 @@ DASHBOARD : In the Dashboard,
 
 STEPS TO RUN THE CODE ON LOCAL MACHINE : 
 
-STEP 1: Install the vite , npm install -D vite
+STEP 1: Clone the Repository - git clone https://github.com/anjali-93/ReactJS/tree/main/ingredient
 
-STEP 2: it ask package name and what language you used like - REACT ,JAVASCRIPT . it gave you package. json,node modules and package.lock.json file and many more now you create the first vite project.
+STEP 2: Navigate to Project Folder - cd ingredient
 
-STEP 3: GO TO GOOGLE TYPE - TAILWIND WITH VITE - https://tailwindcss.com/docs/installation/using-vite 
- it gave you the instructions .
+STEP 3: Install Dependencies - npm install
 
- STEP 4: 
+ STEP 4: Start Development Server - npm run dev
+
+ STEP 5 : Email: admin@gmail.com
+          Password: admin123
