@@ -26,5 +26,7 @@ STEP 3: Install Dependencies - npm install
 
  STEP 4: Start Development Server - npm run dev
 
- STEP 5 : Email: admin@gmail.com
+STEP 5 : http://localhost:5173/
+
+ STEP 6 : Email: admin@gmail.com
           Password: admin123
