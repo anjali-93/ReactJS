@@ -1,12 +1,14 @@
-import Chai from "./chai";
+import { PipelineToolbar } from './toolbar';
+import { PipelineUI } from './ui';
+import { SubmitButton } from './submit';
 
 function App() {
   return (
-    <>
-    <Chai/>
-    <h1>Hello React!!,I am Anjali Saxena</h1>
-    </>
-    
+    <div>
+      <PipelineToolbar />
+      <PipelineUI />
+      <SubmitButton />
+    </div>
   );
 }
 
